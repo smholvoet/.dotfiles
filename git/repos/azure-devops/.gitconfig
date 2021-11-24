@@ -1,0 +1,5 @@
+[user]
+	name = 'Sander Holvoet'
+	email = <work@email.com>
+[commit]
+	gpgsign = false

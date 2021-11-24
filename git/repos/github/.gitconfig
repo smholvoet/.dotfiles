@@ -1,0 +1,6 @@
+[user]
+	name = smholvoet
+	email = <private@email.com>
+	signingkey = E0FF368C672E8AAB
+[commit]
+	gpgsign = true

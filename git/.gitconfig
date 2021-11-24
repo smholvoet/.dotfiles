@@ -1,0 +1,8 @@
+[core]
+	editor = \"C:\\Users\\holvo\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
+[gpg]
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+[includeIf "gitdir:~/repos/github/"]
+    path = ~/repos/github/.gitconfig
+[includeIf "gitdir:~/repos/azure-devops/"]
+    path = ~/repos/azure-devops/.gitconfig

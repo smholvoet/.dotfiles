@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",  
+    "git.enableSmartCommit": true,
+    "git.enableCommitSigning": true,
+    "explorer.confirmDragAndDrop": false,
+    "powershell.pester.codeLens": false
+}
