@@ -20,6 +20,9 @@ $EdgeVersion = (Get-AppxPackage "Microsoft.MicrosoftEdge.Stable" -AllUsers).Vers
 $EdgeSetupPath = [Environment]::GetEnvironmentVariable("ProgramFiles(x86)") + '\Microsoft\Edge\Application\' + $EdgeVersion + '\Installer\setup.exe'
 & $EdgeSetupPath --uninstall --system-level --verbose-logging --force-uninstall
 
+# Uninstall Windows Terminal, manage it through Chocolatey
+Get-AppxPackage Microsoft.WindowsTerminal | Remove-AppPackage
+
 # Install packages
 choco install 7zip.install
 choco install advanced-ip-scanner
@@ -38,6 +41,7 @@ choco install gpg4win
 choco install greenshot
 choco install icue
 choco install microsoft-edge-insider-dev
+choco install microsoft-windows-terminal
 choco install nordvpn
 choco install nvidia-display-driver
 choco install postman
