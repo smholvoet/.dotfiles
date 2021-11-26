@@ -76,7 +76,8 @@ Write-Host "VS Code location: $($VSCodeDir)"
 
 $VSCodeSettings = "vscode\settings.json"
 $VSCodePsProfile = "vscode\Microsoft.VSCode_profile.ps1"
-Copy-Item $VSCodeSettings $VSCodePsProfile -Destination $VSCodeDir -Force -Verbose
+Copy-Item $VSCodeSettings -Destination $VSCodeDir -Force -Verbose
+Copy-Item $VSCodePsProfile -Destination $VSCodeDir -Force -Verbose
 
 
 # ----------------------------------------------------------------------
