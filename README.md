@@ -33,7 +33,7 @@ By default, this script will:
 - Load my VS Code settings, defined in `vscode\settings.json`
 - Run [Sophia Script](https://github.com/farag2/Sophia-Script-for-Windows) with a custom configuration, defined in `sophia\Sophia_custom.ps1`
 
-- ### ✅ Updates
+### ✅ Updates
 
 Run `Invoke-Update.ps1` manually or create a [scheduled task](https://www.technipages.com/scheduled-task-windows). This script will update:
 
