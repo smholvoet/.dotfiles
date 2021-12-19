@@ -1,6 +1,17 @@
+# Variables
+$stopwatch =  [system.diagnostics.stopwatch]::StartNew()
+$CheckMark = "✅"
+$Timer = "⏱️"
+
+# Show PS version
+Write-Host "Loading PowerShell $($PSVersionTable.PSVersion)...`t$CheckMark"
+
 # Import modules
-Import-Module -Name Terminal-Icons
+Write-Host "Loading oh-my-posh...`t`t$CheckMark"
 Import-Module -Name oh-my-posh
+Write-Host "Loading Terminal-Icons...`t$CheckMark"
+Import-Module -Name Terminal-Icons
+Write-Host "Loading PSReadLine...`t`t$CheckMark"
 Import-Module -Name PSReadLine
 
 # Set oh-my-posh theme
@@ -103,3 +114,5 @@ function Show-Calendar {
 
     $line
 }
+
+Write-Host "`nProfile loaded in $($stopwatch.Elapsed.TotalMilliseconds) ms`t$Timer`n"
