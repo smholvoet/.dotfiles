@@ -22,7 +22,7 @@ By default, this script will:
 
 ### ✅ Configuration
 
-Open `Invoke-Config.ps1` in VS Code and run the required sections using the integrated terminal. 
+Open `Invoke-Config.ps1` in VS Code and run the required sections using the integrated terminal.
 
 By default, this script will:
 
