@@ -69,8 +69,7 @@ $VsCodeExtensionsMs = @(    'docsmsft.docs-markdown',
                             'ms-vscode.azurecli',
                             'ms-vscode.powershell')
 
-$VsCodeExtensionsCustom = @('CoenraadS.bracket-pair-colorizer-2',
-                            'DavidAnson.vscode-markdownlint',
+$VsCodeExtensionsCustom = @('DavidAnson.vscode-markdownlint',
                             'eamodio.gitlens',
                             'hediet.vscode-drawio',
                             'streetsidesoftware.code-spell-checker')

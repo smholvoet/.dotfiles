@@ -9,5 +9,6 @@
     "git.enableSmartCommit": true,
     "git.enableCommitSigning": true,
     "explorer.confirmDragAndDrop": false,
-    "powershell.pester.codeLens": false
+    "powershell.pester.codeLens": false,
+    "editor.bracketPairColorization.enabled": true
 }
