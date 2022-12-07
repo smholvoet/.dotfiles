@@ -21,10 +21,18 @@ Set-PoshPrompt -Theme sander
 Set-Alias grep findstr
 New-Alias -Name cal -Value Show-Calendar -Force
 
+# Folder aliases
 function repo { Set-Location "~\repos" }
 function home { Set-Location "~" }
+
+# Open current directory in File Explorer
 function open { explorer . }
+
+# Launch Google in default browser
 function google { Start-Process "https://www.google.com/" }
+
+# Display public IP
+function whatsmyip { (Invoke-WebRequest ifconfig.me/ip).Content }
 
 # PSReadLine options
 Set-PSReadLineOption -PredictionSource History
@@ -37,7 +45,7 @@ $PSDefaultParameterValues["Install-Module:SkipDependencies"] = $true
 $PSDefaultParameterValues["Install-Module:SkipPublisherCheck"] = $true
 $PSDefaultParameterValues["Install-Module:Confirm"] = $false
 
-# Cmdlets
+# Show current month
 function Show-Calendar {
     [CmdletBinding()]
     param (
